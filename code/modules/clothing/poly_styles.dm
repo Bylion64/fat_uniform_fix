@@ -64,7 +64,7 @@
 /datum/poly_style/proc/get_mob_pattern_state(obj/item/clothing/under/U, mob/living/carbon/human/H)
 	var/pattern = U.poly_pattern
 	if(!pattern || U.rolled_down)
-		return null
+		return null                      // vox bases have no pattern overlays
 	if(H && (H.species?.name == VOX))
 		return null
 	if(pattern == POLY_PATTERN_TURT)
