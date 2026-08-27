@@ -30,8 +30,7 @@
 	var/world_pattern = "world_pattern_standard"
 	var/inv_pattern = "inv_pattern_standard"
 
-// Style to actually render as for this mob. Fat mobs have no turtleneck sprites, so a fat
-// turtleneck renders as standard to keep base/detail/pattern consistent.
+
 /datum/poly_style/proc/get_effective(mob/living/carbon/human/H)
 	return src
 
