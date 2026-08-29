@@ -113,12 +113,6 @@
 	world_pattern = "world_pattern_turtleneck"
 	inv_pattern = "inv_pattern_turtleneck"
 
-/datum/poly_style/turtleneck/get_effective(mob/living/carbon/human/H)
-	if(H && HAS_TRAIT(H, TRAIT_FAT))
-		return global.poly_styles_by_key[POLY_STYLE_STD]
-	return src
-
-
 // key => singleton datum. "job" is absent on purpose — it means "no polychromic jumpsuit".
 var/global/list/poly_styles_by_key = build_poly_styles()
 
