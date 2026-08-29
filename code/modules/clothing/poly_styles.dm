@@ -54,6 +54,8 @@
 		return (H && HAS_TRAIT(H, TRAIT_FAT)) ? "mob_detail_pattern5_fat" : "mob_detail_pattern5"
 	if(H && HAS_TRAIT(H, TRAIT_FAT))
 		return is_belt ? "mob_detail_belt_fat" : "mob_detail_standard_fat"
+	if(H && H.bodytype_object.name == SLIM_BODYTYPE)
+		return is_belt ? "mob_detail_belt_fem" : "mob_detail_standard_fem"
 	return is_belt ? "mob_detail_belt" : "mob_detail_standard"
 
 /datum/poly_style/proc/get_mob_pattern_state(obj/item/clothing/under/U, mob/living/carbon/human/H)
