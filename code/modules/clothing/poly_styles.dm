@@ -63,7 +63,7 @@
 	if(!pattern || U.rolled_down)
 		return null
 	if(H && (H.species?.name == VOX))
-		return null						// vox bases have no pattern overlays
+		return null						// vox bases have no pattern overlays.
 	if(pattern == POLY_PATTERN_TURT)
 		if(H && HAS_TRAIT(H, TRAIT_FAT))
 			return "mob_pattern_turtleneck_fat"
