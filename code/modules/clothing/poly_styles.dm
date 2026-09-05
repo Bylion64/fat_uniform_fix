@@ -65,7 +65,7 @@
 	if(H && (H.species?.name == VOX))
 		return null						// vox bases have no pattern overlays.
 	if(pattern == POLY_PATTERN_TURT)
-		if(H && HAS_TRAIT(H, TRAIT_FAT))
+		if(H && H.bodytype_object.name == FAT_BODYTYPE)
 			return "mob_pattern_turtleneck_fat"
 		if(H && H.bodytype_object.name == SLIM_BODYTYPE)
 			return "mob_pattern_turtleneck_fem"
